@@ -1,0 +1,52 @@
+{
+    "id": "myform",
+    "schemaVersion": "1.1.0",
+    "name": "myForm1",
+    "revision": "V1",
+    "type": "task",
+    "readOnly": false,
+    "content": [
+        {
+            "id": "productname",
+            "type": "string",
+            "label": "productName",
+            "readOnly": false,
+            "value": "${context.productName}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "productcost",
+            "type": "integer",
+            "label": "productCost",
+            "readOnly": false,
+            "value": "${context.productCost}",
+            "constraints": {
+                "required": false
+            }
+        },
+        {
+            "id": "productcount",
+            "type": "integer",
+            "label": "productCount",
+            "readOnly": false,
+            "value": "${context.productCount}",
+            "constraints": {
+                "required": false
+            }
+        }
+    ],
+    "decisions": [
+        {
+            "id": "accept",
+            "text": "Accept",
+            "decisionType": "positive"
+        },
+        {
+            "id": "reject",
+            "text": "Reject",
+            "decisionType": "negative"
+        }
+    ]
+}
